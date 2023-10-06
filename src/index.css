@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+  
+@font-face {
+    font-family: InterLight;
+    src: url(./assets/fonts/Inter/static/Inter-Light.ttf);
+}
+@font-face {
+    font-family: InterRegular;
+    src: url(./assets/fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: InterMedium;
+    src: url(./assets/fonts/Inter/static/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: InterSemiBold;
+    src: url(./assets/fonts/Inter/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: InterBold;
+    src: url(./assets/fonts/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url(./assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+
+body {
+    font-family: InterRegular;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+  
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
