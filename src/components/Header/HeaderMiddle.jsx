@@ -4,7 +4,7 @@ import {CatalogueIcon, SearchIcon, UserIcon, LoveIcon, CartIcon} from "../Header
 const HeaderMiddle = () => {
     return (
         <div className="flex items-center justify-between mb-[11px] pt-[18px]">
-          <img src={logo} alt="logo" />
+          <a href="/"><img src={logo} alt="logo" /></a>
           <div className="flex gap-x-[7px]">
             <button className="flex w-[120px] h-[40px] items-center justify-center gap-x-[2px] rounded-[4px] bg-[#EAEAF9]">
                 <CatalogueIcon/> <span className="font-['InterMedium'] text-[#3333CC] tracking-[0.084px]">Katalog</span>

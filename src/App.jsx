@@ -1,15 +1,18 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer/Footer";
+import {lazy, Suspense} from "react";
 import {Outlet} from "react-router-dom";
-import arrow from "./assets/icons/arrow-up.svg";
+
+const Header = lazy(() => import("./components/Header"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
+
 const App = () => {
     return (
         <>  
         <Header />
-            <main className="relative">
+           
+            <Suspense fallback={<h1>LOADING . . .</h1>}>
                 <Outlet />
-                <a href="#header" className="fixed right-0 top-[90%]"><img src={arrow} alt="#" /></a>
-            </main>
+            </Suspense>
+            
         <Footer />           
         </>
     );
