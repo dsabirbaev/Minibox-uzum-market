@@ -3,7 +3,13 @@ import Breadcrumb from "../../components/UI/Breadcrumbs/Breadcrumb";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import useProductApi from "../../service/product/useProductApi";
 import "./style.scss";
-import { Bag, Box, Truck } from "../../components/CardIcons";
+import { Bag, Box, Truck, ArrowLeft, ArrowRight } from "../../components/CardIcons";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/bundle';
+
 const ProductItem = () => {
     let [data, setData] = useState([]);
     let [product, setProduct] = useState([]);
@@ -22,13 +28,14 @@ const ProductItem = () => {
             // console.log(res.data[0]);
         });
     };
-
+   
     useEffect(() => {
         createBreadcrumb(location.pathname);
         state();
     }, [slug]);
 
-    console.log(product)
+
+    console.log(product.images)
     return (
         <section id="item" className="py-8">
             <div className="container">
@@ -36,12 +43,45 @@ const ProductItem = () => {
             </div>
 
             <div className="container">
-                <div className="flex pt-6">
-                    {/* {
-                        product?.images?.map((item) => {
-                            return  <img src={`https://image.minibox.uz${item}`} alt="img" className="w-[250px]" />
-                        })
-                    } */}
+                <div className="flex  gap-x-20 pt-6">
+
+                    <div>
+                        {
+                            <Swiper
+                                spaceBetween={0}
+                                slidesPerView={1}
+                                slidesPerGroup={1}
+                                pagination={{ clickable: true }}
+                                modules={[Pagination, Autoplay, Navigation]}
+                                loop={true}
+                                navigation={{
+                                    nextEl: ".button-next-slide",
+                                    prevEl: ".button-prev-slide",
+                                }}
+
+
+                                className="card-slider"
+
+                            >
+                                {
+                                    product?.images?.map((item, index) => (
+
+                                        <SwiperSlide key={index} className="">
+                                            <img src={`https://image.minibox.uz${item}`} alt="img" className="w-full" />
+                                        </SwiperSlide>
+
+                                    ))
+                                }
+                                <div className="button-next-slide absolute right-2 top-[50%]  z-50 w-[28px] h-[28px] flex items-center justify-center rounded-full cursor-pointer bg-gray-100 hover:bg-gray-300">
+                                   <ArrowRight/>
+                                </div>
+                                <div className="button-next-slide absolute left-2 top-[50%]  z-50 w-[28px] h-[28px] flex items-center justify-center rounded-full cursor-pointer bg-gray-100 hover:bg-gray-300">
+                                    <ArrowLeft/>
+                                </div>
+                            </Swiper>
+
+                        }
+                    </div>
 
                     <div>
                         <h1 className="text-xl font-['InterSemibold'] mb-2">{product?.name}</h1>
@@ -56,12 +96,12 @@ const ProductItem = () => {
                         <div className="p-3 bg-gray-100 rounded-lg min-w-[320px] max-w-[100%] mx-auto mb-4">
                             <small className="mb-2 block">Yetkazib berish:</small>
                             <div className="mb-2 flex gap-x-2">
-                                <Box />  
+                                <Box />
                                 <span>7-Oktabrdan</span>
                                 <span className="text-green-500">Bepul</span>
                             </div>
                             <div className="flex gap-x-2">
-                                <Truck/>
+                                <Truck />
                                 <span>10-Oktabrgacha</span>
                                 <span className="text-green-500">Bepul</span>
                             </div>
@@ -72,10 +112,10 @@ const ProductItem = () => {
                         </button>
                         <div className="flex items-center gap-x-2">
                             <button className="flex items-center gap-x-1 duration-200 hover:opacity-[0.8] bg-[#0c7a43] p-[16px] rounded-full text-white font-['InterSemibold'] text-[16px]">
-                                <Bag color="#fff"/> <span>Savatga qo'shish</span>
+                                <Bag color="#fff" /> <span>Savatga qo'shish</span>
                             </button>
                             <button className="flex items-center gap-x-1 border border-[#0c7a43] p-[16px] rounded-full text-[#0c7a43] font-['InterSemibold'] text-[16px]">
-                                <Bag/> <span>Savatga o'tish</span>
+                                <Bag /> <span>Savatga o'tish</span>
                             </button>
                         </div>
                     </div>
