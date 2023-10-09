@@ -36,7 +36,7 @@ const ProductItem = () => {
     return (
         <section id="item" className="py-8">
             <div className="container">
-                <Breadcrumb data={data} />
+                <Breadcrumb product={product} />
             </div>
 
             <div className="container">
