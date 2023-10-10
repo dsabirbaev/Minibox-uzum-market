@@ -4,10 +4,16 @@ import { useParams } from "react-router-dom";
 import useProductApi from "../../service/product/useProductApi";
 import ProductCarousel from "../../components/UI/Carousel/ProductCarousel";
 import useLikeStore from "../../store/useLikeStore";
-import { Star, Plus, Minus } from "../../components/CardIcons";
+import { Star, Plus, Minus, ArrowRight, Bag } from "../../components/CardIcons";
 import { Tooltip, Typography } from "@material-tailwind/react";
 
-
+import {
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+} from "@material-tailwind/react";
 const ProductItem = () => {
   let [product, setProduct] = useState([]);
   let [countProduct, setCountProduct] = useState(0);
@@ -40,7 +46,7 @@ const ProductItem = () => {
     state();
     // console.log(JSON.parse(localStorage.getItem("LIKE_COLLECTION")));
   }, [slug]);
- 
+
   return (
     <section className="my-8">
       <div className="container">
@@ -49,14 +55,14 @@ const ProductItem = () => {
 
       <div className="container">
 
-        <div className="flex  gap-x-20 pt-6">
+        <div className="flex gap-x-20 pt-6">
 
-          <div className="w-[508px] h-[554px]">
+          <div className="min-w-[508px] h-[554px]">
             <ProductCarousel image={product.images} />
           </div>
 
 
-          <div className="grow p-4">
+          <div className="px-4 py-2">
             <div className="flex justify-between font-['RobotoRegular'] mb-[12px]">
               <div className="flex items-center gap-x-[16px] text-[#62656A] text-[13px]">
                 <span className="flex items-center gap-x-1"><Star /> 5(202 baho)</span>
@@ -173,13 +179,30 @@ const ProductItem = () => {
             </div>
 
             <div className="mb-[24px]">
-                <div className="flex items-center justify-between">
-                    <div className="flex">
-                      <span>Oyiga 3  so'mdan </span>
-                      <span>muddatli to'lov</span>
+                <div className="flex items-center justify-between rounded-[12px] bg-[#F5F6FA] p-[12px]">
+                    <div className="flex items-center gap-x-1">
+                      <span className="font-['InterSemiBold'] text-[#1F1F26] bg-[#FF0] rounded-[8px] py-[2px] px-[6px]">Oyiga 3  so'mdan </span>
+                      <span className="font-['InterMedium']">muddatli to'lov</span>
                     </div>
+
+                    <span className="cursor-pointer"><ArrowRight/></span>
                 </div>
             </div>
+
+            <div className="flex items-center gap-x-2 mb-[24px] font-['InterSemiBold'] text-[16px] tracking-[0.064px]">
+                <button className="bg-[#7000FF] rounded-[12px] text-white py-[18px] px-[28px] hover:bg-transparent hover:text-black border hover:border-[#7000FF] duration-200">Savatga qoʻshish</button>
+                <button className="text-[#7000FF] border border-[#7000FF] hover:bg-[#7000FF] hover:text-white duration-200 rounded-[12px] py-[18px] px-[28px]">Tugmani 1 bosishda xarid qilish</button>
+            </div>
+
+            <div className="rounded-[8px] flex items-center gap-x-2 px-[32px] py-[10px] bg-[#ffe433] mb-[64px]">
+                <span><Bag/></span> <span className="font-['RobotoRegular'] text-[#141415] ">Bu haftada 2000 kishi sotib oldi</span>
+            </div>
+
+            <p className="text-[#212121] font-['RobotoRegular'] leading-[24px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex cum alias dolorum, temporibus, earum eaque aperiam sit ab maxime reiciendis id. Culpa esse quas, facere obcaecati numquam delectus perspiciatis earum quaerat quo perferendis ut consequatur praesentium atque beatae eligendi maiores?</p>
+          </div>
+
+          <div>
+
           </div>
         </div>
       </div>
