@@ -4,14 +4,16 @@ import { useParams } from "react-router-dom";
 import useProductApi from "../../service/product/useProductApi";
 import ProductCarousel from "../../components/UI/Carousel/ProductCarousel";
 import useLikeStore from "../../store/useLikeStore";
-import { Plus, Minus, ArrowRight, Bag } from "../../components/CardIcons";
+import { ArrowRight, Bag } from "../../components/CardIcons";
 import { Tooltip, Typography } from "@material-tailwind/react";
 import TabPanels from "../../components/UI/TabPanels";
 import CardWrapper from "../../components/Layout/CardWrapper";
+
+
 const ProductItem = () => {
   let [product, setProduct] = useState([]);
   let [data, setData] = useState([]);
-  let [countProduct, setCountProduct] = useState(0);
+
   let { slug } = useParams();
   const { likeProdFunc } = useLikeStore();
 
@@ -32,14 +34,7 @@ const ProductItem = () => {
     likeProdFunc(product, isLike, setIsLike);
   };
 
-  const increase = () => {
-    setCountProduct(countProduct + 1);
-  }
-  const decrease = () => {
-    if (countProduct > 0) {
-      setCountProduct(countProduct - 1);
-    }
-  }
+ 
 
   useEffect(() => {
     state();
@@ -159,11 +154,7 @@ const ProductItem = () => {
                 <span className="text-[#212121] mb-[9px] block">Miqdor:</span>
 
                 <div className="flex items-center gap-x-[18px]">
-                  <div className="flex items-center gap-x-1">
-                    <button onClick={() => decrease()}><Minus /></button>
-                    <span>{countProduct}</span>
-                    <button onClick={() => increase()}><Plus /></button>
-                  </div>
+                  
                   <p className="text-[#00C853]">
                     Sotuvda {product.count} dona bor
                   </p>

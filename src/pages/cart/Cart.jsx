@@ -5,7 +5,7 @@ import CartItem from "../../components/UI/CartItem";
 const Cart = () => {
   
   const [data, setData] = useState([]);
-
+  const [check, setCheck] = useState(false);
   const getProductCart = () => {
     useProductApi.getAllProductsFromCart().then((res) => {
       setData(res.data);
@@ -13,6 +13,11 @@ const Cart = () => {
    
   }
 
+  const isCheck = () => {
+    setCheck(!check)
+  }
+
+  console.log(check)
   useEffect(() => {
     getProductCart();
   }, []);
@@ -33,7 +38,9 @@ const Cart = () => {
             px] w-full p-4 pb-0 rounded-lg">
             <div className="flex items-center justify-between mb-[20px]">
               <div className="flex items-center gap-2">
-                <input className="cursor-pointer" id="check" type="checkbox" />
+               
+                  <input onChange={() => isCheck()} className="cursor-pointer" id="check" type="checkbox" />
+                
                 <label
                   className="text-[13px] select-none cursor-pointer"
                   htmlFor="check"
@@ -51,7 +58,7 @@ const Cart = () => {
             <div>
               {data.length > 0
                 ? data?.map((item, index) => (
-                    <CartItem key={index} item={item} getProductCart={getProductCart()} />
+                    <CartItem key={index} item={item} getProductCart={getProductCart()} check={check} />
                   ))
                 : "Loading..."}
             </div>

@@ -5,7 +5,7 @@ import useProductApi from "../../../service/product/useProductApi";
 import {Trash} from "../../../components/CardIcons";
 import { ToastContainer, toast } from 'react-toastify';
 
-const CartItem = ({ item, getProductCart }) => {
+const CartItem = ({ item, getProductCart, check }) => {
   const [count, setCount] = useState(1);
 
   const deleteCart = (id) => {
@@ -20,7 +20,10 @@ const CartItem = ({ item, getProductCart }) => {
       <ToastContainer />
       <div className="flex items-center">
         <div>
-          <input type="checkbox" />
+          {
+            check ? <input type="checkbox" checked/> : <input type="checkbox" />
+          }
+          
         </div>
         <div className="w-[120px] h-[120px] ml-[10px] mr-[15px]">
           <img
