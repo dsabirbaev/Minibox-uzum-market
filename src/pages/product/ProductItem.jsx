@@ -7,9 +7,10 @@ import useLikeStore from "../../store/useLikeStore";
 import { Plus, Minus, ArrowRight, Bag } from "../../components/CardIcons";
 import { Tooltip, Typography } from "@material-tailwind/react";
 import TabPanels from "../../components/UI/TabPanels";
-
+import CardWrapper from "../../components/Layout/CardWrapper";
 const ProductItem = () => {
   let [product, setProduct] = useState([]);
+  let [data, setData] = useState([]);
   let [countProduct, setCountProduct] = useState(0);
   let { slug } = useParams();
   const { likeProdFunc } = useLikeStore();
@@ -19,6 +20,10 @@ const ProductItem = () => {
   const state = () => {
     useProductApi.getOneItem(slug).then((res) => {
       setProduct(res.data[0]);
+    });
+
+    useProductApi.getAll().then((res) => {
+      setData(res.data);
     });
   };
 
@@ -196,12 +201,16 @@ const ProductItem = () => {
 
               <p className="text-[#212121] font-['RobotoRegular'] leading-[24px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex cum alias dolorum, temporibus, earum eaque aperiam sit ab maxime reiciendis id. Culpa esse quas, facere obcaecati numquam delectus perspiciatis earum quaerat quo perferendis ut consequatur praesentium atque beatae eligendi maiores?</p>
             </div>
+
           </div>
 
-          <div>
-           <TabPanels/>
+          <div className="mb-[26px]">
+            <TabPanels product={product}/>
           </div>
 
+          <div className="p-4 mb-[26px]">
+            <CardWrapper data={data.splice(0, 10)} title="Oʻxshash mahsulotlar"></CardWrapper>
+          </div>
         </div>
       </div>
     </section>
