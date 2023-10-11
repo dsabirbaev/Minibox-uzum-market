@@ -1,5 +1,5 @@
 {
-  "products" : [
+  "products": [
     {
       "_id": "650c43f412e6ceb47d002b75",
       "name": "Dyson",
@@ -14,14 +14,10 @@
       ],
       "status": "ACTIVE",
       "count": 149,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-21T13:24:04.320Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "65198d830f124a73444e224a"
       }
     },
@@ -38,14 +34,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T14:20:31.092Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "65199a030f124a73444e2441"
       }
     },
@@ -59,14 +51,10 @@
       ],
       "status": "ACTIVE",
       "count": 49,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T14:16:02.837Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651999580f124a73444e23cb"
       }
     },
@@ -83,14 +71,10 @@
       ],
       "status": "ACTIVE",
       "count": 59,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T14:12:26.141Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "65199fab0f124a73444e2581"
       }
     },
@@ -108,14 +92,10 @@
       ],
       "status": "ACTIVE",
       "count": 60,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:59:47.659Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519a1c40f124a73444e26cf"
       }
     },
@@ -133,14 +113,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:44:14.549Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519a4be0f124a73444e27ba"
       }
     },
@@ -157,14 +133,10 @@
       ],
       "status": "ACTIVE",
       "count": 30,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:36:28.986Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519a7f10f124a73444e2874"
       }
     },
@@ -180,14 +152,10 @@
       ],
       "status": "ACTIVE",
       "count": 40,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:31:35.472Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519aa920f124a73444e29be"
       }
     },
@@ -203,14 +171,10 @@
       ],
       "status": "ACTIVE",
       "count": 25,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:24:51.863Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519abbf0f124a73444e2a4c"
       }
     },
@@ -226,14 +190,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:05:59.570Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519b0350f124a73444e2c10"
       }
     },
@@ -248,14 +208,10 @@
       ],
       "status": "ACTIVE",
       "count": 23,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T13:02:47.884Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519b1760f124a73444e2c89"
       }
     },
@@ -271,14 +227,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:56:35.267Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519b2170f124a73444e2d31"
       }
     },
@@ -295,14 +247,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:54:16.225Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519b9d20f124a73444e2e06"
       }
     },
@@ -318,14 +266,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:51:57.739Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519bb3a0f124a73444e2ee7"
       }
     },
@@ -341,14 +285,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:47:01.418Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519bcac0f124a73444e2f5b"
       }
     },
@@ -362,14 +302,10 @@
       ],
       "status": "ACTIVE",
       "count": 90,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:44:08.741Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519bf040f124a73444e2fe6"
       }
     },
@@ -384,14 +320,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:37:21.618Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519bfbb0f124a73444e303f"
       }
     },
@@ -406,14 +338,10 @@
       ],
       "status": "ACTIVE",
       "count": 25,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:31:46.905Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519c1370f124a73444e30d2"
       }
     },
@@ -430,14 +358,10 @@
       ],
       "status": "ACTIVE",
       "count": 25,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:28:20.788Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519c1d90f124a73444e3182"
       }
     },
@@ -455,14 +379,10 @@
       ],
       "status": "ACTIVE",
       "count": 100,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:24:40.161Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "6519c2860f124a73444e31f7"
       }
     },
@@ -478,14 +398,10 @@
       ],
       "status": "ACTIVE",
       "count": 25,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:19:16.675Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651af8021e901c91c26b00f4"
       }
     },
@@ -502,14 +418,10 @@
       ],
       "status": "ACTIVE",
       "count": 30,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:08:40.657Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651af9dc1e901c91c26b0162"
       }
     },
@@ -526,14 +438,10 @@
       ],
       "status": "ACTIVE",
       "count": 54,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T12:02:33.747Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651afb0a1e901c91c26b01cc"
       }
     },
@@ -551,14 +459,10 @@
       ],
       "status": "ACTIVE",
       "count": 110,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T11:55:06.936Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651afb931e901c91c26b0253"
       }
     },
@@ -575,14 +479,10 @@
       ],
       "status": "ACTIVE",
       "count": 125,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T10:46:56.648Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651afc991e901c91c26b02b6"
       }
     },
@@ -597,14 +497,10 @@
       ],
       "status": "ACTIVE",
       "count": 180,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T10:43:35.682Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651afe221e901c91c26b030f"
       }
     },
@@ -621,14 +517,10 @@
       ],
       "status": "ACTIVE",
       "count": 85,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T10:25:49.503Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651afeb51e901c91c26b036a"
       }
     },
@@ -644,14 +536,10 @@
       ],
       "status": "ACTIVE",
       "count": 95,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T10:20:32.052Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651aff2c1e901c91c26b03bd"
       }
     },
@@ -667,14 +555,10 @@
       ],
       "status": "ACTIVE",
       "count": 100,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-11T10:18:47.494Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651aff731e901c91c26b0403"
       }
     },
@@ -690,14 +574,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:56:33.138Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651affbc1e901c91c26b0455"
       }
     },
@@ -711,14 +591,10 @@
       ],
       "status": "ACTIVE",
       "count": 20,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:51:14.179Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b00141e901c91c26b049a"
       }
     },
@@ -738,14 +614,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:44:01.188Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b014f1e901c91c26b0515"
       }
     },
@@ -760,14 +632,10 @@
       ],
       "status": "ACTIVE",
       "count": 50,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:24:47.164Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b01be1e901c91c26b0567"
       }
     },
@@ -782,14 +650,10 @@
       ],
       "status": "ACTIVE",
       "count": 19,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:19:49.062Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b02321e901c91c26b05aa"
       }
     },
@@ -803,14 +667,10 @@
       ],
       "status": "ACTIVE",
       "count": 10,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:14:51.486Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b02701e901c91c26b05f3"
       }
     },
@@ -826,14 +686,10 @@
       ],
       "status": "ACTIVE",
       "count": 100,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T19:01:59.589Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b03941e901c91c26b064e"
       }
     },
@@ -850,14 +706,10 @@
       ],
       "status": "ACTIVE",
       "count": 100,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T18:56:54.256Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b07721e901c91c26b07d2"
       }
     },
@@ -874,14 +726,10 @@
       ],
       "status": "ACTIVE",
       "count": 100,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T18:53:34.805Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b08311e901c91c26b085a"
       }
     },
@@ -896,14 +744,10 @@
       ],
       "status": "ACTIVE",
       "count": 19,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-09T18:46:31.368Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b09c61e901c91c26b08eb"
       }
     },
@@ -968,9 +812,7 @@
       ],
       "createdAt": "2023-09-08T13:12:12.291Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651b06bf1e901c91c26b071c"
       }
     },
@@ -986,14 +828,10 @@
       ],
       "status": "ACTIVE",
       "count": 145,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-06T13:06:42.370Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "64f9ddb22edc35eed3efa962"
       }
     },
@@ -1017,9 +855,7 @@
       ],
       "createdAt": "2023-09-06T12:40:40.293Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "64f9fc35db03268b9e4d07ab"
       }
     },
@@ -1042,9 +878,7 @@
       ],
       "createdAt": "2023-09-06T12:32:46.070Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "64f8a0530dd42cebebcf6fed"
       }
     },
@@ -1060,14 +894,10 @@
       ],
       "status": "ACTIVE",
       "count": 146,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-06T12:14:48.187Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "64f9dd292edc35eed3efa8f4"
       }
     },
@@ -1091,9 +921,7 @@
       ],
       "createdAt": "2023-09-06T12:03:00.650Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "64f9fbcddb03268b9e4d0741"
       }
     },
@@ -1109,14 +937,10 @@
       ],
       "status": "ACTIVE",
       "count": 147,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-06T11:49:15.388Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "64fa02cddb03268b9e4d0a8b"
       }
     },
@@ -1130,16 +954,112 @@
       ],
       "status": "ACTIVE",
       "count": 35,
-      "colors": [
-        
-      ],
+      "colors": [],
       "createdAt": "2023-09-06T11:20:28.189Z",
       "units": {
-        "sizes": [
-          
-        ],
+        "sizes": [],
         "_id": "651be8fd69fe2447d29c4333"
       }
+    }
+  ],
+  "cart": [
+    {
+      "name": "Bluetooth-karnay Wekome D31 mini",
+      "price": 300000,
+      "slugify": "bluetooth-karnay-wekome-d31-mini-a224",
+      "images": [
+        "/uploads/photos_1696176611532.jpg",
+        "/uploads/photos_1696176611582.jpg",
+        "/uploads/photos_1696176625550.jpg",
+        "/uploads/photos_1696176640910.jpg"
+      ],
+      "count": 50,
+      "colors": [],
+      "units": {
+        "sizes": [],
+        "_id": "65199a030f124a73444e2441"
+      },
+      "createdAt": "2023-09-11T14:20:31.092Z",
+      "status": "ACTIVE",
+      "id": 1
+    },
+    {
+      "name": "Dyson",
+      "price": 500000,
+      "slugify": "dyson-f5b8",
+      "images": [
+        "/uploads/photos_1696169662824.jpg",
+        "/uploads/photos_1696169697133.jpg",
+        "/uploads/photos_1696173429839.jpg",
+        "/uploads/photos_1696173439121.jpg",
+        "/uploads/photos_1696173440525.jpg"
+      ],
+      "count": 149,
+      "colors": [],
+      "units": {
+        "sizes": [],
+        "_id": "65198d830f124a73444e224a"
+      },
+      "createdAt": "2023-09-21T13:24:04.320Z",
+      "status": "ACTIVE",
+      "id": 2
+    },
+    {
+      "name": "Baseus PPJL010001 10000mAh",
+      "price": 440000,
+      "slugify": "baseus-ppjl010001-10000mah-492d",
+      "images": [
+        "/uploads/photos_1696178594169.jpg",
+        "/uploads/photos_1696178603849.jpg",
+        "/uploads/photos_1696178613230.jpg",
+        "/uploads/photos_1696178621368.jpg",
+        "/uploads/photos_1696178625964.jpg"
+      ],
+      "count": 60,
+      "colors": [],
+      "units": {
+        "sizes": [],
+        "_id": "6519a1c40f124a73444e26cf"
+      },
+      "createdAt": "2023-09-11T13:59:47.659Z",
+      "status": "ACTIVE",
+      "id": 3
+    },
+    {
+      "name": "Borofone BE52",
+      "price": 150000,
+      "slugify": "borofone-be52-e5b4",
+      "images": [
+        "/uploads/photos_1696182632184.jpg",
+        "/uploads/photos_1696182640814.jpg"
+      ],
+      "count": 23,
+      "colors": [],
+      "units": {
+        "sizes": [],
+        "_id": "6519b1760f124a73444e2c89"
+      },
+      "createdAt": "2023-09-11T13:02:47.884Z",
+      "status": "ACTIVE",
+      "id": 4
+    },
+    {
+      "name": "Borofone BE52",
+      "price": 150000,
+      "slugify": "borofone-be52-e5b4",
+      "images": [
+        "/uploads/photos_1696182632184.jpg",
+        "/uploads/photos_1696182640814.jpg"
+      ],
+      "count": 23,
+      "colors": [],
+      "units": {
+        "sizes": [],
+        "_id": "6519b1760f124a73444e2c89"
+      },
+      "createdAt": "2023-09-11T13:02:47.884Z",
+      "status": "ACTIVE",
+      "id": 5
     }
   ]
 }

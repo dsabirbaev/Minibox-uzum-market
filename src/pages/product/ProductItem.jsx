@@ -86,8 +86,7 @@ const ProductItem = () => {
             <div className="px-4 py-2">
               <div className="flex justify-between font-['RobotoRegular'] mb-[12px]">
                 <div className="flex items-center gap-x-[16px] text-[#62656A] text-[13px]">
-                  <span className="flex items-center gap-x-1"><Star /> 5(202 baho)</span>
-                  <p>Koʻproq 9000 buyurtma</p>
+                  {product?.count} sotuvda bor
                 </div>
                 <button
                   onClick={() => setLikeFun()}
@@ -194,7 +193,7 @@ const ProductItem = () => {
                 <span className="text-[#212121] mb-[9px] block">Narx:</span>
 
                 <div className="flex items-center gap-x-[20px] font-['RobotoRegular']">
-                  <span className="text-[20px] font-['RobotoMedium'] text-[#212121]">{product?.price}</span> <span className="line-through text-[#8A8D93]">{String(Math.floor(product?.price + product?.price * 0.12)).replace(/\B(?=(\d{3})+(?!\d))/g, ".")} so'm</span>
+                  <span className="text-[20px] font-['RobotoMedium'] text-[#212121]">{product?.price}</span> <span className="line-through text-[#8A8D93]">{String(Math.floor(product?.price + product?.price * 0.12)).replace(/\B(?=(\d{3})+(?!\d))/g, " ")} so'm</span>
                   <span className="text-[13px] font-['RobotoMedium'] bg-[#AF7] rounded-[4px] px-[6px] py-[3px]">Katta sotuvlar</span>
                 </div>
               </div>
@@ -202,7 +201,7 @@ const ProductItem = () => {
               <div className="mb-[24px]">
                 <div className="flex items-center justify-between rounded-[12px] bg-[#F5F6FA] p-[12px]">
                   <div className="flex items-center gap-x-1">
-                    <span className="font-['InterSemiBold'] text-[#1F1F26] bg-[#FF0] rounded-[8px] py-[2px] px-[6px]">Oyiga 3  so'mdan </span>
+                    <span className="font-['InterSemiBold'] text-[#1F1F26] bg-[#FF0] rounded-[8px] py-[2px] px-[6px]">Oyiga {String(Math.floor(product?.price / 3)).replace(/\B(?=(\d{3})+(?!\d))/g, " ")}  so'mdan </span>
                     <span className="font-['InterMedium']">muddatli to'lov</span>
                   </div>
 
@@ -237,7 +236,7 @@ const ProductItem = () => {
                     key={value}
                     value={value}
                     onClick={() => setActiveTab(value)}
-                    activeTab
+                  
                     className={activeTab === value ? "text-gray-900" : ""}
                   >
                     {label}

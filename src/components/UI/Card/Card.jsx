@@ -1,8 +1,26 @@
 
 import {Link} from "react-router-dom";
 import { Bag, Star} from "../../CardIcons";
-const Card = ({state: {name, price, slugify, images, count}}) => {
-    
+
+import useProductApi from "../../../service/product/useProductApi";
+
+const Card = ({state: {name, price, slugify, images, count, colors, units, createdAt, status}}) => {
+    const addToCart =  () => {
+        useProductApi.addToCartFunc({
+          name,
+          price,
+          slugify,
+          images,
+          count,
+          colors,
+          units,
+          createdAt,
+          status,
+        }).then((res) => {
+       
+        });
+     
+    };
     return (
         <div className="card max-w-[232px] h-[456px] font-[Inter] mx-auto  hover:shadow-md duration-500 border">
             <Link to={`/product/${slugify}`}>
@@ -40,9 +58,9 @@ const Card = ({state: {name, price, slugify, images, count}}) => {
                             {String(price).replace(/\B(?=(\d{3})+(?!\d))/g, ".")} so'm
                         </p>
                     </div>
-                    <a className="p-1 rounded-full border-2 border-[#D0D2D9] flex items-center justify-center" href="#">
+                    <button onClick={() => addToCart()} className="p-1 rounded-full border-2 border-[#D0D2D9] flex items-center justify-center">
                         <Bag/>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
