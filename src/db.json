@@ -981,85 +981,27 @@
       },
       "createdAt": "2023-09-11T14:20:31.092Z",
       "status": "ACTIVE",
-      "id": 1
-    },
-    {
-      "name": "Dyson",
-      "price": 500000,
-      "slugify": "dyson-f5b8",
-      "images": [
-        "/uploads/photos_1696169662824.jpg",
-        "/uploads/photos_1696169697133.jpg",
-        "/uploads/photos_1696173429839.jpg",
-        "/uploads/photos_1696173439121.jpg",
-        "/uploads/photos_1696173440525.jpg"
-      ],
-      "count": 149,
-      "colors": [],
-      "units": {
-        "sizes": [],
-        "_id": "65198d830f124a73444e224a"
-      },
-      "createdAt": "2023-09-21T13:24:04.320Z",
-      "status": "ACTIVE",
       "id": 2
     },
     {
-      "name": "Baseus PPJL010001 10000mAh",
-      "price": 440000,
-      "slugify": "baseus-ppjl010001-10000mah-492d",
+      "name": "Bluetooth-karnay Wekome D31 mini",
+      "price": 300000,
+      "slugify": "bluetooth-karnay-wekome-d31-mini-a224",
       "images": [
-        "/uploads/photos_1696178594169.jpg",
-        "/uploads/photos_1696178603849.jpg",
-        "/uploads/photos_1696178613230.jpg",
-        "/uploads/photos_1696178621368.jpg",
-        "/uploads/photos_1696178625964.jpg"
+        "/uploads/photos_1696176611532.jpg",
+        "/uploads/photos_1696176611582.jpg",
+        "/uploads/photos_1696176625550.jpg",
+        "/uploads/photos_1696176640910.jpg"
       ],
-      "count": 60,
+      "count": 50,
       "colors": [],
       "units": {
         "sizes": [],
-        "_id": "6519a1c40f124a73444e26cf"
+        "_id": "65199a030f124a73444e2441"
       },
-      "createdAt": "2023-09-11T13:59:47.659Z",
+      "createdAt": "2023-09-11T14:20:31.092Z",
       "status": "ACTIVE",
       "id": 3
-    },
-    {
-      "name": "Borofone BE52",
-      "price": 150000,
-      "slugify": "borofone-be52-e5b4",
-      "images": [
-        "/uploads/photos_1696182632184.jpg",
-        "/uploads/photos_1696182640814.jpg"
-      ],
-      "count": 23,
-      "colors": [],
-      "units": {
-        "sizes": [],
-        "_id": "6519b1760f124a73444e2c89"
-      },
-      "createdAt": "2023-09-11T13:02:47.884Z",
-      "status": "ACTIVE",
-      "id": 4
-    },
-    {
-      "name": "Borofone BE52",
-      "price": 150000,
-      "slugify": "borofone-be52-e5b4",
-      "images": [
-        "/uploads/photos_1696182632184.jpg",
-        "/uploads/photos_1696182640814.jpg"
-      ],
-      "count": 23,
-      "colors": [],
-      "units": {
-        "sizes": [],
-        "_id": "6519b1760f124a73444e2c89"
-      },
-      "createdAt": "2023-09-11T13:02:47.884Z",
-      "status": "ACTIVE",
-      "id": 5
     }
   ]
 }

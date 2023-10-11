@@ -1,12 +1,23 @@
-import  { useState } from "react";
+import { useState, useRef } from "react";
 import Counter from "../Counter";
 
-const CartItem = ({ item }) => {
-  const [count, setCount] = useState(1);
-  
+import useProductApi from "../../../service/product/useProductApi";
+import {Trash} from "../../../components/CardIcons";
+import { ToastContainer, toast } from 'react-toastify';
 
+const CartItem = ({ item, getProductCart }) => {
+  const [count, setCount] = useState(1);
+
+  const deleteCart = (id) => {
+      useProductApi.deleteCartProduct(id).then((res) => {
+      toast.success("Deleted!", { autoClose: 1000 });
+      getProductCart();
+  
+    });
+  };
   return (
     <div className="flex items-center border-t-[1px] py-[20px] justify-between">
+      <ToastContainer />
       <div className="flex items-center">
         <div>
           <input type="checkbox" />
@@ -49,6 +60,10 @@ const CartItem = ({ item }) => {
         </div>
       </div>
       <div className="flex flex-col items-end">
+        <button onClick={() => deleteCart(item.id)} title="Delete item" className="flex items-center gap-x-2 text-lg font-['InterMedium'] hover:text-indigo-400 mb-2">
+          <Trash/>
+          <span>Yo'q qilish</span>
+          </button>
         <p className="text-white bg-green-500 px-1 text-[13px] mb-3 rounded-md">
           10% chegirma
         </p>

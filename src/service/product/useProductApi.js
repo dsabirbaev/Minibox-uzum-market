@@ -5,6 +5,7 @@ const useProductApi = {
     getOneItem: (slug)=> api.get(`/products?slugify=${slug}`),
     addToCartFunc: (data) => api.post(`/cart`, data),
     getAllProductsFromCart: () => api.get("/cart"),
+    deleteCartProduct: (id)=> api.delete(`/cart/${id}`)
 }
 
 

@@ -8,4 +8,5 @@ import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 import Minus from "./Minus";
 import Plus from "./Plus";
-export {Bag, Star, Box, Truck, ArrowLeft, ArrowRight, Minus, Plus};
+import Trash from "./Trash";
+export {Bag, Star, Box, Truck, ArrowLeft, ArrowRight, Minus, Plus, Trash};

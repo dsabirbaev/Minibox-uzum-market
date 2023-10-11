@@ -12,7 +12,7 @@ const ProductItem = lazy(() => import("../pages/product/ProductItem"));
 const Subcategory = lazy(() => import("../pages/subcategory/Subcategory"));
 const SubcategoryItem = lazy(() => import("../pages/subcategory/SubcategoryItem"));
 const Cart = lazy(() => import("../pages/cart/Cart"));
-
+const Wishes = lazy(() => import("../pages/Wishes"));
 const router = createBrowserRouter([
     {
         path: "/",
@@ -50,6 +50,10 @@ const router = createBrowserRouter([
             {
                 path: "/cart",
                 element: <Cart />,
+            },
+            {
+                path: "/wishes",
+                element: <Wishes />,
             },
         ],
     },

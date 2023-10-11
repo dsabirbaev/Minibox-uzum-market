@@ -4,16 +4,10 @@ import { useParams } from "react-router-dom";
 import useProductApi from "../../service/product/useProductApi";
 import ProductCarousel from "../../components/UI/Carousel/ProductCarousel";
 import useLikeStore from "../../store/useLikeStore";
-import { Star, Plus, Minus, ArrowRight, Bag } from "../../components/CardIcons";
+import { Plus, Minus, ArrowRight, Bag } from "../../components/CardIcons";
 import { Tooltip, Typography } from "@material-tailwind/react";
+import TabPanels from "../../components/UI/TabPanels";
 
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
 const ProductItem = () => {
   let [product, setProduct] = useState([]);
   let [countProduct, setCountProduct] = useState(0);
@@ -48,25 +42,7 @@ const ProductItem = () => {
   }, [slug]);
 
 
-  const [activeTab, setActiveTab] = useState("");
-  const data = [
-    {
-      label: "Mahsulot tavsifi",
-      value: "Mahsulot tavsifi",
-      desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quod impedit inventore dignissimos magni quisquam optio maiores vel ea non?`,
-    },
-    {
-      label: "Ko'rsatma",
-      value: "Ko'rsatma",
-      desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quod impedit inventore dignissimos magni quisquam optio maiores vel ea non?`,
-    },
-    {
-      label: "Sharhlar (202)",
-      value: "Sharhlar (202)",
-      desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quod impedit inventore dignissimos magni quisquam optio maiores vel ea non?`,
-    }
-   
-  ];
+
   return (
     <section className="my-8">
       <div className="container">
@@ -221,38 +197,11 @@ const ProductItem = () => {
               <p className="text-[#212121] font-['RobotoRegular'] leading-[24px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex cum alias dolorum, temporibus, earum eaque aperiam sit ab maxime reiciendis id. Culpa esse quas, facere obcaecati numquam delectus perspiciatis earum quaerat quo perferendis ut consequatur praesentium atque beatae eligendi maiores?</p>
             </div>
           </div>
-                  
-          <div className="w-[788px] mx-auto mb-20">
-            <Tabs value={activeTab}>
-              <TabsHeader
-                className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
-                indicatorProps={{
-                  className:
-                    "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none",
-                }}
-              >
-                {data.map(({ label, value }) => (
-                  <Tab
-                    key={value}
-                    value={value}
-                    onClick={() => setActiveTab(value)}
-                  
-                    className={activeTab === value ? "text-gray-900" : ""}
-                  >
-                    {label}
-                  </Tab>
-                ))}
-              </TabsHeader>
-              <TabsBody>
-                {data.map(({ value, desc }) => (
-                  <TabPanel key={value} value={value}>
-                    {desc}
-                  </TabPanel>
-                ))}
-              </TabsBody>
-            </Tabs>
+
+          <div>
+           <TabPanels/>
           </div>
-          
+
         </div>
       </div>
     </section>

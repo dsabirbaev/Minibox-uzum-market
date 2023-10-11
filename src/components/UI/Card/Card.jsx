@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import { Bag, Star} from "../../CardIcons";
 
 import useProductApi from "../../../service/product/useProductApi";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Card = ({state: {name, price, slugify, images, count, colors, units, createdAt, status}}) => {
     const addToCart =  () => {
@@ -17,12 +18,13 @@ const Card = ({state: {name, price, slugify, images, count, colors, units, creat
           createdAt,
           status,
         }).then((res) => {
-       
+            toast.success("Added to cart!", { autoClose: 1000 });
         });
      
     };
     return (
         <div className="card max-w-[232px] h-[456px] font-[Inter] mx-auto  hover:shadow-md duration-500 border">
+             <ToastContainer />
             <Link to={`/product/${slugify}`}>
                 <div className="relative bg-[#efefef]">
                     <img src={`https://image.minibox.uz${images[0]}`} alt="" className="min-h-[310px] object-contain" />

@@ -20,10 +20,13 @@ const HeaderMiddle = () => {
           <UserIcon />
           <span>Kirish</span>
         </div>
-        <div className="flex gap-x-[8px] items-center">
-          <LoveIcon />
-          <span>Saralangan</span>
-        </div>
+        <Link to="/wishes">
+          <div className="flex gap-x-[8px] items-center">
+            <LoveIcon />
+            <span>Saralangan</span>
+          </div>
+        </Link>
+
         <Link to="/cart">
           <div className="flex gap-x-[8px] items-center">
             <CartIcon />

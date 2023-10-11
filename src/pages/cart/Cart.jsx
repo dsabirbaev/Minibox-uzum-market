@@ -6,16 +6,21 @@ const Cart = () => {
   
   const [data, setData] = useState([]);
 
-  useEffect(() => {
+  const getProductCart = () => {
     useProductApi.getAllProductsFromCart().then((res) => {
-        setData(res.data);
-      })
-      .catch();
+      setData(res.data);
+    })
+   
+  }
+
+  useEffect(() => {
+    getProductCart();
   }, []);
 
   let price = 0;
   return (
     <div className="container mx-auto mt-[50px]">
+      
       <div>
         <h2 className="text-[24px] mb-7">
           Savatingiz:
@@ -46,7 +51,7 @@ const Cart = () => {
             <div>
               {data.length > 0
                 ? data?.map((item, index) => (
-                    <CartItem key={index} item={item} />
+                    <CartItem key={index} item={item} getProductCart={getProductCart()} />
                   ))
                 : "Loading..."}
             </div>
